@@ -4,5 +4,6 @@
 // The list of which env maps to which file can be found in `.angular.json`.
 
 export const environment = {
-  name: "development"
+  name: "development",
+  apiUrl: process.env.apiUrl || "http://192.168.99.100:3000/v1/"
 };

@@ -1,8 +1,11 @@
 <div class="app-container">
   <h1>Demo store, enviroment - {{ enviroment }}</h1>
+  <h1 *ngIf="currentUser">Hi {{ currentUser.email }}!</h1>
+  <h1 *ngIf="currentUser"><a href="" (click)="logout()">Log out</a></h1>
   <nav class="nav-links">
     <a routerLink="/">Home</a>
     <a routerLink="products">Products</a>
+    <a routerLink="login">Log-in</a>
   </nav>
   <div class="router-container">
     <router-outlet></router-outlet>

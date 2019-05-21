@@ -18,7 +18,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && webpack --watch",
+    "build": "ng build",
     "lint": "ng lint ng-universal-demo",
     "build:client-and-server-bundles": "ng build --prod && ng run ng-universal-demo:server:production",
     "build:prerender": "npm run build:client-and-server-bundles && npm run compile:server && npm run generate:prerender",
@@ -46,6 +46,8 @@
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
     "core-js": "^2.4.1",
     "express": "^4.15.2",
+    "jwt-decode": "^2.2.0",
+    "localstorage-polyfill": "^1.0.1",
     "reflect-metadata": "^0.1.10",
     "rxjs": "6.3.3",
     "zone.js": "^0.8.26"
